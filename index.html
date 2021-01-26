@@ -13,16 +13,13 @@
                 <label for="searchQuery">Search term: </label><input type="search" id="searchQuery" placeholder="Enter search term...">
                 <button>Search</button>
             </form>
-            <div role="application"><!-- Application role shouldn't be necessary -->
-                <section id="searchResults" role="status">
-                    <section id="pagination">
-                        <button aria-label="Previous page" id="prevPage"><</button>
-                        <button aria-label="Next page" id="nextPage">></button>
-                    </section>
-                    <p hidden>Response time: <span id="responseTime"></span>ms</p>
+            <section id="searchResults" role="status">
+                <section id="pagination">
+                    <button aria-label="Previous page" id="prevPage"><</button>
+                    <button aria-label="Next page" id="nextPage">></button>
                 </section>
-            </div>
-
+                <p hidden>Response time: <span id="responseTime"></span>ms</p>
+            </section>
         </main>
     </body>
 </html>

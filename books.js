@@ -3,7 +3,10 @@ $(function() {
     searchQuery;
     $('#bookSearch').submit( function() {
         searchQuery = $("#searchQuery").val();
-        getBooks(searchQuery);
+        if(searchQuery.length) {
+            startIndex = 0;
+            getBooks(searchQuery);
+        }
         return false;
     });
 

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.book {
+  background-color: transparent;
+  border: thin solid transparent;
+  display: flex;
+  font-size: 110%;
+  font-weight: bold;
+  margin: 1em 0 0;
+  padding: 0 5px;
+  text-align: left; }
+  .book[aria-expanded="false"]::before {
+    content: '>';
+    padding-right: 0.35em; }
+  .book[aria-expanded="true"]::before {
+    content: '⌄';
+    padding-right: 0.35em; }
+
+.expanded + dd .description {
+  display: block; }
+
+.description {
+  background-color: #fffedb;
+  font-size: 110%;
+  margin: 0;
+  padding: 0.5em;
+  display: none; }
+
+#pagination {
+  display: none; }
